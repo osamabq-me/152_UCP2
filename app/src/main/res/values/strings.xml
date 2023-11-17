@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">UCP2</string>
+    <string name="btn_Start">Start</string>
+    <string name="btn_confirm">Confirm</string>
+    <string name="btn_back">Back</string>
+    <string name="name">name</string>
+    <string name="nim">NIM</string>
+    <string name="focus">Focus</string>
+    <string name="paper_title">Paper Title</string>
+    <string name="dosen1">First Dosen</string>
+    <string name="dosen2">Secound dosen</string>
+    <string name="haris">Haris saitawan</string>
+    <string name="aprilla">Aprilia Kurnati</string>
+    <string name="cahya">Cahya Damarjati</string>
+</resources>
