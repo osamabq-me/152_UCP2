@@ -52,9 +52,11 @@ fun FormApp(
                 Formdata(
                     choice1 = dosen1.map { id -> context.resources.getString(id) },
                     choise2 =dosen2.map { id -> context2.resources.getString(id)  } ,
-
-                    onSelectionChanged = {viewModel.setContact(it)},
-                    onConfirmButtonClicked ={ navController.navigate(PageManager.Summary.name)}
+                    onSelectionChanged = { viewModel.setdosen1(it) },
+                    onSelectionChanged2 = {viewModel.setdosen2(it)},
+                    onConfirmButtonClicked ={
+                        viewModel.setContact(it)
+                        navController.navigate(PageManager.Summary.name)}
                 )
             }
 

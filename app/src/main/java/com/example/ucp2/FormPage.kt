@@ -33,6 +33,8 @@ fun Formdata(
     choice1: List<String>,
     choise2: List<String>,
     onSelectionChanged: (String) -> Unit,
+    onSelectionChanged2: (String) -> Unit,
+
     onConfirmButtonClicked: (MutableList<String>) -> Unit,
 ) {
     var nametxt by remember {
@@ -124,7 +126,7 @@ fun Formdata(
                         selected = selecteddosen2 == item,
                         onClick = {
                             selecteddosen2 = item
-                            onSelectionChanged(item)
+                            onSelectionChanged2(item)
                         }
                     ),
                         verticalAlignment = Alignment.CenterVertically
@@ -132,7 +134,7 @@ fun Formdata(
                         RadioButton(selected = selecteddosen2 == item,
                             onClick = {
                                 selecteddosen2 = item
-                                onSelectionChanged(item)
+                                onSelectionChanged2(item)
                             }
                         )
                         Text(item)

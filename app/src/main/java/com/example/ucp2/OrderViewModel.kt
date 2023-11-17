@@ -19,9 +19,7 @@ class OrderViewModel : ViewModel() {
             name = list[0],
             Nim = list[1],
             focus = list[2],
-            title = list[3],
-            dos1 = list[4],
-            dos2 = list[5]
+            title = list[3]
 
         )
         }
@@ -32,6 +30,6 @@ class OrderViewModel : ViewModel() {
     }
 
     fun setdosen2(dosenselection: String){
-        _stateUI.update { stateSaatIni -> stateSaatIni.copy(dos1 = dosenselection) }
+        _stateUI.update { stateSaatIni -> stateSaatIni.copy(dos2 = dosenselection) }
     }
 }

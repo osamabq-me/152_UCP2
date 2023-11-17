@@ -39,6 +39,11 @@ fun SummryPage(
             Text(text = stringResource(id = R.string.paper_title))
             Text(text = orderUIState.title)
 
+            Text(text = stringResource(id = R.string.dosen1))
+            Text(text = orderUIState.dos1)
+
+            Text(text = stringResource(id = R.string.dosen2))
+            Text(text = orderUIState.dos2)
 
 
 
